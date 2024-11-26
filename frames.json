@@ -5,10 +5,10 @@
   "variant": string, // optional; name of the main frame license for which this frame is a variant
   "source": HORUS, // must be the same as the Manufacturer ID to sort correctly
   "name": string,
-  "mechtype": string[], // can be customized
-  "specialty": Striker/Controller | IPrerequisite // see below
+  "mechtype": string[Striker/Controller], // can be customized
+  "specialty": boolean | IPrerequisite // see below
   "description": string, // v-html
-  "mounts": MountType[],
+  "mounts": MountType[Flex],
   "stats": {
     "size": 0.5, // see note below
     "structure": 4,
