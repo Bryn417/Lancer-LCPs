@@ -1,0 +1,32 @@
+{
+  "id": Fury,
+  "license_level": 2, // set to zero for this item to be available to a LL0 character
+  "license_id": Fury, // reference to the Frame id of the associated license; used to link variant frames to the main license
+  "variant": string, // optional; name of the main frame license for which this frame is a variant
+  "source": HORUS, // must be the same as the Manufacturer ID to sort correctly
+  "name": string,
+  "mechtype": string[], // can be customized
+  "specialty": Striker/Controller | IPrerequisite // see below
+  "description": string, // v-html
+  "mounts": MountType[],
+  "stats": {
+    "size": 0.5, // see note below
+    "structure": 4,
+    "stress": number,
+    "armor": 2,
+    "hp": 6,
+    "evasion": 10,
+    "edef": 10,
+    "heatcap": 4,
+    "repcap": 3,
+    "sensor_range": 5,
+    "tech_attack": 1,
+    "save": 11,
+    "speed": 5,
+    "sp": 6
+  },
+  "traits": IFrameTraitData[],
+  "core_system": ICoreSystemData,
+  "image_url"?: string
+  "y_pos"?: number, // used for vertical alignment of the mech in banner views (like in the new mech selector)
+},
